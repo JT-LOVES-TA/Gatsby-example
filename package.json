@@ -8,15 +8,30 @@
     "gatsby"
   ],
   "scripts": {
-    "develop": "gatsby develop",
+    "develop": "env-cmd -f .env.development gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "^15.4.0",
+    "dompurify": "^2.3.3",
     "gatsby": "^3.13.1",
+    "gatsby-plugin-react-helmet": "^4.14.0",
+    "gatsby-plugin-sass": "^4.14.0",
+    "gatsby-plugin-sharp": "^3.14.1",
+    "gatsby-remark-images": "^5.11.0",
+    "gatsby-remark-relative-images": "^2.0.2",
+    "gatsby-source-contentful": "^5.14.0",
+    "gatsby-source-filesystem": "^3.14.0",
+    "gatsby-transformer-remark": "^4.11.0",
+    "node-sass": "^6.0.1",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "env-cmd": "^10.1.0"
   }
 }

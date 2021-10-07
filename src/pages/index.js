@@ -1,17 +1,18 @@
 import React from "react";
 import { Link } from "gatsby";
-import Header from "../component/header";
-import Footer from "../component/footer";
-
+import Layout from "../component/layout";
+import "../styles/index.scss"
+import Head from "../component/head";
 
 const IndexPage = () => {
-  return (<div>
-    <Header></Header>
-    <h1>Hello</h1>
-    <h2>I'm Groot</h2>
-    <p>Besoin d'un développeur ? <Link to="/contact">Contactez-moi.</Link></p>
-    <Footer></Footer>
-  </div>)
+  return (
+    <Layout>
+      <Head title="Home" />
+      <h1>Hello.</h1>
+      <h2>I'm Groot</h2>
+      <p>Besoin d'un développeur ? <Link to="/contact">Contactez-moi.</Link></p>
+    </Layout>
+  )
 }
 
 export default IndexPage;
